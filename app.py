@@ -5,12 +5,8 @@ import sklearn
 import joblib
 
     
-# loading in the model to predict on the data  
-#open_model = open('connaitre_la_taille.pkl', 'rb')  
-#load_modele= pickle.load(open_model)
-model = joblib.load('connaitre_la_taille.pkl')
-##chargement du Model
-#model_charge=pkl.load(open('mon_model.sav','rb'))
+
+model=pickle.load(open('connaitre_la_taille.pkl','rb'))
 
 def prix_voiture(input_data):
     input_data_numpy=np.asarray(input_data)
