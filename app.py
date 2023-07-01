@@ -1,7 +1,6 @@
 import numpy as np
 import streamlit as st 
 import pickle
-import sklearn
 import joblib
 
     
@@ -30,7 +29,7 @@ def main():
         predir=prix_voiture(age)
 
 
-    st.success(predir[0])
+    st.success(predir)
                                     
 if __name__=='__main__':
     main()
