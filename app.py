@@ -1,6 +1,8 @@
 import numpy as np
 import streamlit as st 
 import pickle
+import sklearn
+import joblib
 
     
 # loading in the model to predict on the data  
@@ -22,13 +24,15 @@ def main():
     age=st.number_input('entrez L\'age')  
 
     predir=''
+    b=0
                                
     if st.button('Resultat') :
         st.header('Votre Taille')
         predir=prix_voiture(age)
+        b=predir[0]
 
 
-    st.success(predir)
+    st.success(b)
                                     
 if __name__=='__main__':
     main()
