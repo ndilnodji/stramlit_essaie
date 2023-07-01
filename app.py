@@ -1,7 +1,6 @@
 import numpy as np
 import streamlit as st 
 import pickle
-import joblib
 
     
 # loading in the model to predict on the data  
